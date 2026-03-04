@@ -1,0 +1,39 @@
+// Content of matriz.html pushed... (I'll use the one I read)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MATRIZ 144 | Nagenta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .matriz-container { padding: 120px 20px; text-align: center; }
+        .input-group { display: flex; gap: 10px; justify-content: center; margin-bottom: 2rem; }
+        .form-control { background: rgba(255,255,255,0.05); border: 1px solid #B5A671; color: white; padding: 10px; border-radius: 5px; }
+        .btn-calculate { background: #B5A671; color: #2D2344; border: none; padding: 15px 30px; border-radius: 30px; font-weight: bold; cursor: pointer; }
+        .result-card { margin-top: 3rem; background: rgba(255,255,255,0.03); border: 1px solid #B5A671; padding: 2rem; border-radius: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .premium-lock { background: rgba(45, 35, 68, 0.8); padding: 2rem; border: 1px solid #B5A671; border-radius: 15px; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <nav class="global-nav">
+        <div class="nav-container"><a href="index.html" class="nav-brand">NAGENTA</a></div>
+    </nav>
+    <main class="matriz-container">
+        <h1>LA MATRIZ 144</h1>
+        <div class="input-group">
+            <input type="date" id="birthDate" class="form-control">
+            <input type="time" id="birthTime" class="form-control">
+            <button id="calculateBtn" class="btn-calculate">TRAZAR MAPA</button>
+        </div>
+        <div id="results" class="result-card" style="display:none;">
+            <div id="free-content"></div>
+            <div class="premium-lock">
+                <p>Tu cartografía completa tiene 144 dimensiones. Accedé al reporte completo aquí:</p>
+                <a href="https://link.mercadopago.com.ar/nagenta" target="_blank" class="btn-gold-vibe">REVELAR CON MERCADO PAGO</a>
+            </div>
+        </div>
+    </main>
+    <script src="matriz.js"></script>
+</body>
+</html>
